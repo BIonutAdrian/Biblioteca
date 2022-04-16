@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.biblioteca.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="219.0" style="-fx-background-color: #FF8633;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="10.0" layoutY="200.0" prefHeight="35.0" prefWidth="208.0" text="Biblioteca">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bookImageView" fitHeight="134.0" fitWidth="201.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/biblioteca.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="102.0" layoutY="30.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="166.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="110.0" layoutY="164.0" promptText="Username" />
+            <Label layoutX="33.0" layoutY="217.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="110.0" layoutY="215.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="33.0" layoutY="281.0" mnemonicParsing="false" onAction="#loginButtonUse" prefHeight="25.0" prefWidth="224.0" text="Login" />
+            <Button fx:id="cancelButton" layoutX="33.0" layoutY="312.0" mnemonicParsing="false" onAction="#cancelButtonUse" prefHeight="25.0" prefWidth="224.0" text="Cancel" />
+            <Label fx:id="loginError" layoutX="83.0" layoutY="256.0" prefHeight="17.0" prefWidth="156.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
